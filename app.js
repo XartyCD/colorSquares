@@ -8,9 +8,8 @@ const headCont = document.getElementById("header__container")
 hinput.oninput = () => {
     let inp = (hinput.value).split(" ")
     if (inp.length % 2 == 0) {
-        letelems = inp.filter(el => inp.indexOf(el) % 2 == 0)
+        let elems = inp.filter(el => inp.indexOf(el) % 2 == 0)
         let arg = inp.filter(el => inp.indexOf(el) % 2 == 1)
-        console.log(elems)
         elems.forEach((elem, index) => {
             if (elem <= items.length) {
                 if (elem === "0") {
